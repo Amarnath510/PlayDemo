@@ -32,7 +32,7 @@ public class StudentController extends Controller {
 		
 		Student s = Json.fromJson(json, Student.class);
 		
-		// save
+		// save - saves the record and creates a new id.
 		s.save();
 		
 		return ok(Json.toJson(s));
@@ -44,7 +44,7 @@ public class StudentController extends Controller {
 		JsonNode json = request().body().asJson();
 		Student s = Json.fromJson(json, Student.class);
 		
-		// delete
+		// delete - will delete the record using the student id.
 		s.delete();
 		
 		return ok(Json.toJson(s));
@@ -55,7 +55,7 @@ public class StudentController extends Controller {
 		JsonNode json = request().body().asJson();
 		Student s = Json.fromJson(json, Student.class);
 		
-		// update student
+		// update - Updates the student using the student id.
 		s.update();
 		
 		return ok(Json.toJson(s));
