@@ -62,6 +62,7 @@
           
 ### Ready to run the application
  *) We got all the three modules (View(Angular+html)-Controller(Play+ Java)-Model(H2 DB)) ready.
- *) Now we will run our application. 
+ *) Now we will run our application using the run command. In order to run we need to be in play console.
+ *) If your are not in play console then do, play and then run.
  *) NOTE: If you get any DB error then just apply that particular schema to database.
  *) Run the applcaition at localhost:9000
