@@ -1,3 +1,9 @@
-2016-06-28 20:09:38,902 - [INFO] - from play in pool-4-thread-4 
+2016-06-28 21:36:09,922 - [INFO] - from play in pool-4-thread-1 
 Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+
+2016-06-28 21:36:23,493 - [INFO] - from play in play-internal-execution-context-1 
+database [default] connected at jdbc:h2:mem:play
+
+2016-06-28 21:36:24,337 - [INFO] - from play in play-internal-execution-context-1 
+Application started (Dev)
 

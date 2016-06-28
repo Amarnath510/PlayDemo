@@ -3,7 +3,7 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Assets.at(path="/public", file="/index.html")
+GET     /                           controllers.Assets.at(path="/public", file="index.html")
 POST 	/api/student/add            controllers.StudentController.addStudent()
 GET 	/api/student/all            controllers.StudentController.allStudents()
 POST    /api/student/delete         controllers.StudentController.deleteStudent()
