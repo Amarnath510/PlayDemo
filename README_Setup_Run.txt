@@ -66,3 +66,5 @@
  *) If your are not in play console then do, play and then run.
  *) NOTE: If you get any DB error then just apply that particular schema to database.
  *) Run the applcaition at localhost:9000
+
+ ### You can see the application running at "https://enigmatic-reaches-31338.herokuapp.com"
