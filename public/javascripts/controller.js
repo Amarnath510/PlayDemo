@@ -45,6 +45,7 @@ myApp.controller('MyCtrl', ['$scope', '$location', '$http', function($scope, $lo
 			method: 'get',
 			header: 'application/json',
 		}).success(function(response) {
+			// console.log(response);
 			$scope.students = response;
 		});
 	};

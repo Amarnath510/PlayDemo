@@ -17,6 +17,28 @@ public class StudentController extends Controller {
 		// To get one student pass the id of the student record.
 		// Student oneStudent = Student.finder.byId("67"); // pass the student id here.
 		// System.out.println(oneStudent.getName());
+
+		/*
+		If there is not data to respond then return ok() or do following.
+		ObjectNode result = Json.newObject();
+		String name = json.findPath("name").getTextValue();
+		if(name == null) {
+		   result.put("status", "KO");
+		   result.put("message", "Missing parameter [name]");
+		   return badRequest(result);
+		} else {
+		   result.put("status", "OK");
+		   result.put("message", "Hello " + name);
+		   return ok(result);
+		}
+		*/
+
+		System.out.println("Row count = "+ students.size());
+
+		// If no data then return empty result.
+		if(null == students || students.size() == 0) {
+			return ok();
+		}
 		
 		return ok(Json.toJson(students));
 	}
