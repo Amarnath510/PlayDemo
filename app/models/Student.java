@@ -8,6 +8,8 @@ import play.db.ebean.Model;
 @Entity
 public class Student extends Model {
 
+	public static Finder<String, Student> finder = new Finder<String, Student>(String.class, Student.class);
+
 	private static final long serialVersionUID = 1L;
 	
 	@Id
@@ -51,5 +53,4 @@ public class Student extends Model {
 		this.email = email;
 	}
 	
-	public static Finder<String, Student> finder = new Finder<String, Student>(String.class, Student.class);
 }

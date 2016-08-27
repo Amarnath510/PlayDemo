@@ -40,6 +40,7 @@ public class StudentController extends Controller {
 			return ok();
 		}
 		
+		// convert all the student objects and return them as a Json to the UI.
 		return ok(Json.toJson(students));
 	}
 	
@@ -57,6 +58,7 @@ public class StudentController extends Controller {
 		// save - saves the record and creates a new id.
 		s.save();
 		
+		// convert the student object to Json and return.
 		return ok(Json.toJson(s));
 	}
 	
@@ -69,6 +71,7 @@ public class StudentController extends Controller {
 		// delete - will delete the record using the student id.
 		s.delete();
 		
+		// convert the deleted student object to Json and return.
 		return ok(Json.toJson(s));
 	}
 	
@@ -77,9 +80,10 @@ public class StudentController extends Controller {
 		JsonNode json = request().body().asJson();
 		Student s = Json.fromJson(json, Student.class);
 		
-		// update - Updates the student using the student id.
+		// update - Updates the student object using the student id.
 		s.update();
 		
+		// Update student object and return it.
 		return ok(Json.toJson(s));
 	}
 }
